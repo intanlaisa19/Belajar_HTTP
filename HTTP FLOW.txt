@@ -1,0 +1,15 @@
+1. HTTP FLOW
+-> Dalam HTTP, biasanya terdapat dua pihak yang terlibat, yaitu Client dan Server
+
+2. Server 
+-> Sebuah komputer, dimana semua informasi disimpan pada komputer tersebut. Komputer Server biasanya menjalankan aplikasi Web Server agar bisa menerima protocol HTTP.
+
+3. Client
+-> Client merupakan komputer yang bertugas mengirim HTTP Request ke komputer server untuk mengirim request biasanya client menggunakan web browser. Client dan server harus terkoneksi dalam jaringan yang sama agar dapat berkomunikasi
+
+4. Request  
+-> HTTP request biasanya berisikan informasi seperti lokasi resource, data yang dikirim jika ada, dll. HTTP request akan diterima oleh server.
+
+5. Response
+-> setelah memproses request yang dikirim oleh client, maka server akan membalas dengan HTTP response.
+
