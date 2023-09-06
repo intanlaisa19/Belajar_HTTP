@@ -1,0 +1,44 @@
+1. URL (Uniform Resource Locator)
+-> alamat dari sebuah resource di web. Url ini wajib digunakan untuk menuju informasi resource yang akan kita tuju dalam web.
+   Tanpa URL, client atau server tidak akan mengerti informasi apa yang ingin dicari.
+
+2. URL dipecah jadi 2 yaitu
+  a. Domain 
+  -> bagian Header
+  b. Konteks Path
+  -> bagian Start Line
+
+3. Anatomi URL 
+-> URL itu ada bagian yang wajib ada dan ada juga yang tidak.
+   contoh URL : https://www.programmerzamannow.com/
+                https://www.programmerzamannow.com/premium-membership/
+                https://www.programmerzamannow.com/?search=java
+
+4. Contoh dari URL atau anatomi detail dari URL 
+   a. Schema
+   -> Bagian awal URL adalah schema yang mengidentifikasi protocol yang perlu digunakan oleh client. Biasanya dalam URL website, schema tersebut adalah HTTP dan HTTPS. Contoh : http://
+   b. Authority
+   -> Dikenal dengan domain,tetapi tidak disebut domain disini karna didalam authority itu ada 2 bagian. contoh : setelah di pisah :// lalu diikuti authority yang terdiri dari nama domain dan nomor port yang dipisah menggunakan titik dua.
+      Nama Domain nanti akan ditanyakan ke DNS untuk mendapatkan alamat IP nya. Namun, kita bisa langsung menggunakan IP jika memang website tersebut tidak memiliki nama domain.
+      Nomor port tidak wajib, tanpa nomor port, secara default bernilai 80 untuk http dan bernilai 443 untuk https
+      Contoh : https://www.example.com(nama domain):80(port)/
+   c. Path
+   -> Bagian ini tidak wajib. path biasanya berisikan informasi menuju ke resource yang kita tuju. Path terlihat seperti kumpulan folder dan diakhiri dengan file yang ingin kita akses
+      Contoh : : /path/to/myfile.html (biasanya path seperti ini, tetapi tidak wajib)
+   d. Parameter
+   -> ini juga tidak wajib. Parameter dipisah oleh karakter ? setelah authority atau path. Path merupakan informasi tambahan yang berisi key=value, jika ingin menambahkan lebih dari satu parameter, kita bisa tambahkan parameter dengan menggunakan karakter &
+      Contoh : ?key1=value1&key2=value2
+   e. Anchor 
+   -> ini juga tidak wajib. Anchor merupakan representasi bookmark dalam sebuah halaman website. misal jika dalam website terdapat banyak bagian informasi, maka kita bisa gunakan anchor sebagai bookmark ke tiap bagian informasi agar mudah di akses.
+      Contoh : #SomewhereInTheDocument
+
+ 
+
+
+
+
+
+
+
+
+
