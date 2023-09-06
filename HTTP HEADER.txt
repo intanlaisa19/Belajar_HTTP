@@ -1,0 +1,14 @@
+1. HTTP HEADER
+-> informasi tambahan yang biasa dikirim di req atau respon. digunakan agar informasi tidak harus dikirim melalui req body atau respon body. HTTP Header berisi key : value, dan saat ini sudah banyak sekali standarisasi nama key pada HTTP Header
+
+2. Contoh beberapa HTTP Header
+   a. Host
+      -> Authority pada URL (wajib sejak HTTP/1.1), header ini wajib saat mengirim request,jika tidak ada maka server bingung akan melakukan req ke domain yang mana.
+   b. Content-Type
+      -> tipe data dari HTTP Body. Contoh jika ingin mengirimkan data ke server, seperti ingin mengirimkan data gambar, maka perlu memasukan content type didalam header nya dengan value content type nya adalah image.
+   c. User-agent
+      -> Informasi user agent (seperti browser dan sistem operasi)
+   d. Accept
+      -> Tipe data yang diterima oleh client
+   e. Authorization
+      -> Credential untuk autentikasi (misal username + password)
