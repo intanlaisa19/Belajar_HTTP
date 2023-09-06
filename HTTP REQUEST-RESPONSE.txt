@@ -1,0 +1,14 @@
+1. HTTP Request dan Reponse dinamakan juga dengan HTTP Message, HTTP Message memiliki standarisasi format.
+
+2. Standarisasi Format HTTP Message (Request dan Response)
+-> -Request
+    a. berbentuk teks
+    b. Urutan atau alurnya yaitu 
+        * START LINE, contoh -> POST(ini method) : /login (ini konteks path) HTTP/1.1 (ini versi http) -> url ini merupakan gabungan dari domain dan konteks path nya
+        * HEADER, isi nya Key dan Value, contoh -> HOST(ini domain) : example.com (ini value), lalu di ikuti lagi dengan header-header lainnya
+    c. Space -> isi nya space(1 baris) kosong, gunanya untuk pemisah antara header dan body nya
+    d. Body -> bisa berupa teks,video,image dll, contoh -> {"password" : "rahasia","username"; "khannedy"}
+
+   -Reponse -> hampir sama dengan Request, bedanya yaitu :
+    a. START LINE, contoh : HTTP/1.1 200 -> langsung ditulis versi http dan status code nya
+    
