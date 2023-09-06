@@ -1,0 +1,22 @@
+1. Pengenalan HTTP (Hypertext Transfer Protocol)
+-> Protokol untuk melakukan transmisi hypermedia document, seperti HTML, JS, CSS, Video, Audio, Image dll.
+HTTP awalnya digunakan untuk komunikasi antara Web Browser dan Web Server, namun saat ini juga banyak yang menggunakan untuk kebutuhan lain, seperti Backend, API dll.
+
+2. Didalam HTPP terdapat istilah Client Server
+-> HTTP mengikuti arsitektur client dan server maksudnya disini adalah client mengirimkan HTTP Request untuk meminta atau mengirimkan informasi ke server dan server membalas dengan HTTP Response dari HTTP Request yang diterima.
+
+3. Kenapa HTTP sangat populer dan banyak digunakan
+-> karena HTTP menggunakan PLAIN LANGUAGE AND HUMAN READABLE -> menggunakan bahasa yang mudah dimengerti oleh manusia, seperti :
+  -GET        -DELETE
+  -POST       -HEAD
+  -PUT        -OPTION
+
+4. Didalam HTPP terdapat istilah Stateless
+-> HTTP merupakan protokol yang stateless, artinya tiap HTTP Request merupakan request independen, tidak ada keterkaitan atau hubungan dengan HTTP Request sebelum atau setelahnya.
+   Hal ini dilakukan agar HTTP tidak harus dilakukan secara sequence, sehingga client bisa melakukan HTTP Request secara bebas tanpa ada aturan harus dimulai dari mana,  seperti membuka facebook kita boleh membuka apapun yang terdapat di halaman Facebook.
+
+5. Session
+-> Jika HTTP itu stateless, bagaimana dengan session? misal client harus login terlebih dahulu, karena kalau stateless tidak berurutan.
+   Jadi, kalau buat login itu ada namanya Session yang mana HTTP memiliki fitur yang bernama HTTP Cookie yang mana itu merupakan fitur yang memaksa client menyimpan informasi yang diberikan oleh server.
+
+
