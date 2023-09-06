@@ -1,0 +1,11 @@
+1. HTTP BODY
+-> data yang bisa dikirim di HTTP Request, atau data yang diterima dari HTTP Response, artinya client bisa mengirim data ke server menggunakan HTTP Body, begitu juga sebaliknya, Server bisa memberikan body di response menggunakan HTTP Body
+
+2. HTTP Body bisa berisikan teks (html,javascript,css,json) atau binary (image,video,audio)
+
+3. HTTP Body erat kaitannya dengan content-type, biasanya agar client dan server mudah mengerti isi HTTP Body, HTTP Message akan memiliki Header Content-type yang berisi informasi tipe data HTTP Body
+   content-type sudah memiliki standarisasi.
+
+
+
+
