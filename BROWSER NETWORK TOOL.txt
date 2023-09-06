@@ -1,0 +1,3 @@
+1. Browser Network Tool
+-> Web browser memiliki fitur network tool, contoh google chrome dan firefox yang sudah memilik network tool
+   Dengan network tool, kita bisa melihat semua detail HTTP request dan HTTP response yang dilakukan oleh client dan server. 
