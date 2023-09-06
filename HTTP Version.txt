@@ -1,0 +1,15 @@
+1. HTTP VERSION 
+-> Spesifikasi HTTP selalu diperbaharui, saat ini kebanyakan web berjalan di HTTP/1.1 atau HTTP2
+
+2. Perbedaan HTTP/1.1 dengan HTTP2
+    * HTTP/1.1
+      -> Fallback Protocol (jika tidak support 2 maka ia menggunakan 1, tetapi jika menggunakan browser ia mengerti semua jenis HTTP versi berapapun) , dimana Web browser secara default akan melakukan request menggunakan HTTP/2, jika web server tidak mendukung, maka web browser akan melakukan fallback ke protocol HTTP/1.1.
+    * HTTP/2
+      -> -Secara garis besar, spesifikasi HTTP/2 sama dengan HTTP/1.1 yang membedakan yaitu HTTP Request yang dikirim dalam bentuk teks, secara otomatis menjadi binary, sehingga lebih cepat dibandingkan HTTP/1.1
+         -Menggunakan algoritma kompresi (memperkecil ukuran, seperti mengupload gambar 1 mb lalu gambar dikompres sehingga web nya berjalan cepat) untuk memperkecil request dan mendukung multiplexing, sehingga bisa mengirim beberapa request dalam satu connection yang sama.
+         -Dari sisi pembuatan aplikasi, tidak ada perbedaan, semua ini biasanya sudah diurus secara otomatis oleh Web Server yang kita gunakan.
+
+3. HTTP VS HTTPS
+-> HTTPS merupakan HTTP dengan enkripsi, jadi jauh lebih aman menggunakan HTTPS dibanding HTTP biasa.
+   HTTPS menggunakan SSL (Secure Sockets Layer) untuk melakukan enkripsi HTTP Request dan HTTP Response.
+   
