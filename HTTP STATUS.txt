@@ -1,0 +1,24 @@
+1. HTTP STATUS
+-> kode HTTP response yang mengindikasikan apakah sebuah request yang diterima server sukses, gagal, atau ada hal lain yang harus diketahui oleh client.
+
+2. HTTP Status diklasifikasikan dalam lima grup, yaitu :
+   a. Informational Response (100-199)
+   -> Request telah diterima dan dimengerti, namun client diminta untuk menunggu tahapan akhir response, tetapi ini sangat jarang sekali digunakan.
+   b. Successful Response (200-299)
+   -> Kode yang mengindikasi bahwa request yang dikirim oleh client telah diterima,dimengerti dan sukses diproses oleh server.
+   c. Redirect (300-399)
+   -> Mengindikasikan bahwa client harus melakukan aksi selanjutnya untuk menyelesaikan request. Biasanya digunakan ketika lokasi sebuah resource berubah, sehingga server meminta client untuk berpindah ke URL lain
+   d. Client Error (400-499)
+   -> Indikasi bahwa request yang dikirim oleh client tidak diterima oleh server dikarenakan request yang dikirim dianggap tidak valid. Contoh client mengirim Body yang salah, client melakukan tanpa autentikasi padahal resource mewajibkan, seperti mengupload video ke youtube tanpa login maka itu akan ditolak menggunakan status port 400-599.
+   e. Server Error (500-599)
+   -> Indikasi kesalahan terdapat di server. Seperti tidak bisa terkoneksi ke basis data, terdapat jaringan error di server dll.
+
+3. 
+
+   
+
+
+
+
+
+
