@@ -1,0 +1,22 @@
+1. HTTP TERMINOLOGY 
+-> Saat kita belajar HTTP, ada banyak sekali menggunakan terminologi, istilah atau teknologi.
+
+yang termasuk HTTP TERMINOLOGY adalah :
+- Web Browser
+-> aplikasi yang digunakan untuk mengakses web menggunakan protokol HTTP. Seperti Google Chrome, Firefox, Opera, Safari dll.
+
+- TCP (Transmision Control Protocol)
+-> salah satu protokol dalam jaringan komputer yang biasa digunakan oleh web, email, FTP atau lainnya. Jika kita menggunakan jaringan internet, mayoritas koneksi yang digunakan adalah protocol TCP.
+
+- IP (Internet Protocol)
+-> digunakan sebagai identitas komputer di jaringan. Setiap komputer baik itu client dan server akan memiliki IP.
+
+- URL (Uniform Resource Locator)
+-> alamat dari sebuah resource di Web.
+
+- DNS (Domain Name Server)
+-> tempat yang berisi data katalog pemetaan antara nama domain di URL menuju lokasi IP komputer. Saat web browser mengakses sebuah domain di web, sebenarnya prosesnya akan bertanya ke DNS untuk mendapatkan IP, lalu web browser akan melakukan request ke IP tersebut, contoh facebook.com, google.com dll
+
+- Web Server
+-> aplikasi yang berjalan di jaringan internet yang bertugas sebagai server, berisikan informasi dan data yang biasa diakses oleh client.
+   Web server menerima request dari client yaitu web browser, lalu membalas request tersebut berupa informasi yang diminta yaitu Web Server.
