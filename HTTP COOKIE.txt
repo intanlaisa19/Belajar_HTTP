@@ -1,0 +1,3 @@
+1. HTTP didesain stateless, artinya tiap request yang dilakukan, dia tidak tahu request sebelumnya atau selanjutnya yang akan dilakukan.
+
+2. Bagaimana Server tahu kalau client sudah melakukan login sebelum 
