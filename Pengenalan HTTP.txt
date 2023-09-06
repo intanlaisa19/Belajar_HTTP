@@ -20,3 +20,4 @@ HTTP awalnya digunakan untuk komunikasi antara Web Browser dan Web Server, namun
    Jadi, kalau buat login itu ada namanya Session yang mana HTTP memiliki fitur yang bernama HTTP Cookie yang mana itu merupakan fitur yang memaksa client menyimpan informasi yang diberikan oleh server.
 
 
+
