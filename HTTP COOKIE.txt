@@ -1,3 +1,27 @@
 1. HTTP didesain stateless, artinya tiap request yang dilakukan, dia tidak tahu request sebelumnya atau selanjutnya yang akan dilakukan.
 
-2. Bagaimana Server tahu kalau client sudah melakukan login sebelum 
+2. Bagaimana Server tahu kalau client sudah melakukan login sebelum mengakses halaman tersebut ?
+   Cara nya dengan menggunakan fitur HTTP Cookie, Pengertiannya 
+   -> informasi yang diberikan oleh server dan client secara otomatis akan menyimpan data tersebut, contohnya di web browser.
+      ketika client melakukan login di web browser, maka web server mengirimkan data success dan +cookie session ke web browser dan melakukan request selanjutnya, lalu web browser akan menyisipkan cookie yang sudah diterima di request sebelumnya, dari cookie tersebut server bisa mengetahui apakah request tersebut merupakan request client yang sudah login atau belum.
+
+3. Cookie di HTTP Response
+-> Informasi cookie yang diberikan dari server ditempatkan pada Header dengan value Set-Cookie, Cookie itu bisa lebih dari satu jika server memberikan lebih dari satu cookie, bisa menggunakan beberapa key Set-Cookie di Header.
+Contoh : Set-Cookie: user=eko
+            Set-Cookie: session=3412414124124124
+Cookie juga bisa diubah oleh browser.
+
+4. Cookie di HTTP Request 
+-> setelah cookie dari HTTP Response diterima oleh web browser, maka akan disimpan di web browser, lalu HTTP Request selanjutnya akan mengirim cookie di tiap request, dimana cookie yang dikirim bisa menggunakan header dengan nama cookie.
+berbeda dengan http response, untuk http request, cookie harus digabung di satu header jika lebih dari satu cookie.
+Contoh : GET /dashboard HTTP/1.1
+         Host: example.com
+         Accept: text/html
+         Cookie: user=eko; session=3412414124124124
+
+5. Cookie Atribut
+-> Cookie memiliki atribut yang bisa ditambahkan ketika membuat cookie di HTTP Response. contoh atribut di cookie : misalnya user login max 30 hari, jika lewat 30 hari dia akan login kembali.
+
+Jadi, jika cookie ada dan diterima oleh web server maka user sudah login, tetapi jika cookie tidak di terima maka user belum login.
+
+
