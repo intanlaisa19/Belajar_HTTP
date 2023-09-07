@@ -1,0 +1,6 @@
+1. Teknologi Lain yang dikembangkan dari HTTP
+-> a. Server-Sent Event
+   b. WebSocket
+   c. Cross-Origin Resource Sharing 
+   d. RESTful API
+   e. OAuth
