@@ -1,0 +1,16 @@
+1. HTTP Caching
+-> menyimpan data di client sampai batas waktu yang ditentukan, sehingga jika client ingin melakukan request resource yang sama, cukup ambil resource nya di client, tnapa harus meminta ulang ke server. http caching ini sangat cocok dilakukan untuk resource file static yang jarang berubah, seperti file gambar,video,audio, dll.
+contoh kasus nya : a. saat kita buka website, lalu didlam nya terdapat banyak gambar,video dll, dan kita membuka website yang sama dengan isi gambar yang sama
+                   b. lalu kita melalukan request lagi ke server lalu server mengembalikan gambar yang sama, itu ada istilahnya bandwith, jadi seakan2 itu membuang bandwith, maka dibutuhkan fitur caching, yang mana file nya disimpan di client misalnya dalam jangka waktu yang sudah ditentukan.
+                   maksudnya fungsi caching disini adalah ketika client ingin melakukan request lagi ke lokasi url yang sama, maka si client tidak perlu lagi meminta ke server karena datanya sudah disimpan disisi client.
+
+2. Caching ini cocok digunakan buat resource file static yang jarang berubah seperti file audio,gambar,video.
+
+3. Alur jalan nya HTTP Caching (Header Cache Control)
+-> server ketika meminta agar client melakukan caching, maka HTTP Response perlu menambahkan informasi cache-control di header. Cahche control ini berisi informasi berapa lama client bisa menyimpan data response tersebut, sehingga tidak perlu meminta ulang ke server.
+   Contoh : max-age=<seconds>
+            max-xtale=[=<seconds>]
+
+contoh caching yang lain : saat kita sudah offline di facebook, kita masih bisa buka beberapa gambar yang sebelumnya sudah dilihat, itu karna gambar tersebut sudah di caching atau disimpan di smartphone kita.
+
+
